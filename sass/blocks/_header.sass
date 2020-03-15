@@ -1,0 +1,50 @@
+.header
+  width: 100%
+.navbar
+  &__inner
+    display: flex
+    justify-content: space-between
+    align-items: center
+    line-height: 24px
+  &__time
+    color: #ffffff
+    text-align: center
+    font-size: .9rem
+  &__logo
+    padding: 1.8rem 0
+    img
+      height: 100%
+  &__call
+    display: flex
+    align-items: center
+  &__phone
+    margin-right: 1.8rem
+  &__btn
+    text-align: center
+    a
+      display: inline-block
+      line-height: normal
+
+@media screen and (max-width: 768px)
+  .navbar
+    &__time
+      display: none
+@media screen and (max-width: 600px)
+  .navbar
+    &__logo
+      margin-right: .9rem 
+    &__phone
+      margin-right: 1rem
+      line-height: normal
+      a
+        font-size: .7rem
+    &__btn
+      a
+        padding: .8rem 1.2rem
+        font-size: 0.6rem
+@media screen and (max-width: 480px)
+  .navbar
+    &__logo
+      padding: 1rem 0
+    &__phone
+      display: none
