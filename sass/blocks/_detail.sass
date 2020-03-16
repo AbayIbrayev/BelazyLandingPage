@@ -1,0 +1,24 @@
+.detail
+  background-image: url("../../img/detail/detail-bg.png")
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+  &__form
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-bottom: 50px
+  &__text
+    font-size: 1rem
+    span
+      display: block
+      margin-bottom: 20px
+      &:last-child
+        margin-bottom: 10px
+@media screen and (max-width: 991px)
+  .detail
+    &__form
+      flex-direction: column
+      input
+        margin-right: 0
+        margin-bottom: 30px

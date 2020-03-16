@@ -16,6 +16,8 @@ img
   font-size: 1.2rem
   opacity: 1
   transition: opacity .3s
+  &--big
+    font-size: 1.9rem
   &:hover
     opacity: .7
 .button
@@ -30,6 +32,13 @@ img
   cursor: pointer
   border: none
   +bold
+  &--form
+    width: 300px
+    height: 70px
+    padding: 25px 20px
+  &--secondary
+    background: none
+    background-color: $color-secondary
   &:hover
     opacity: .8
 .section
@@ -46,6 +55,8 @@ img
     font-size: 1.1rem
     margin: 0
     margin-bottom: 100px
+    &--detail
+      margin-bottom: 50px
   &__block
     display: flex
     justify-content: center
@@ -68,6 +79,7 @@ img
 .input
   padding: 25px 20px
   width: 300px
+  height: 100%
   margin-right: 30px
   background-color: #F2F2F2
   border: none
