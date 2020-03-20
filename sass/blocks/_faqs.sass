@@ -1,0 +1,73 @@
+.faqs
+  &__inner
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__list
+    list-style: none
+    text-align: left
+    padding-left: 0
+    margin: 0
+    margin-right: 20px
+  &__icon
+    margin-right: 25px
+    width: 20px
+    height: 20px
+  &__item
+    display: flex
+    align-items: flex-start
+    justify-content: flex-start
+    margin-bottom: 50px
+    &:last-child
+      margin-bottom: 0
+  &__questions
+    position: relative
+  &__question
+    text-decoration: underline
+    transition: color .2s
+    cursor: pointer
+    &:hover
+      color: #579EFF
+  &__popup
+    background-color: #ffffff
+    color: #000000
+    position: absolute
+    top: 30px
+    left: 0
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    padding: 10px 15px
+    width: 300px
+    display: none
+    &::before
+      content: ''
+      top: -10px
+      left: 10px
+      width: 0; 
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid #ffffff;
+      position: absolute
+  &__answer
+    max-width: 280px
+    font-size: 14px
+    margin: 0
+  &__close
+    border: none
+    padding: 0
+    font-weight: bold
+    cursor: pointer
+    background-color: transparent
+    transition: color .2s
+    &:hover
+      color: #579EFF
+@media screen and (max-width: 991px)
+  .faqs
+    &__inner
+      flex-direction: column-reverse
+    &__list
+      margin-right: 0
+    &__img
+      margin-bottom: 50px
