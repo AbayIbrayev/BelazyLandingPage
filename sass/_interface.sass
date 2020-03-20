@@ -103,6 +103,22 @@ img
     background-image: url("../../img/input-icon-1.png")
     background-position: right 5% center
     background-repeat: no-repeat
+.arrow
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  z-index: 99
+  width: 20px
+  height: 30px
+  border: none
+.prev
+  left: 30px
+  background: url(../img/left_arrow.png) center no-repeat
+  background-size: 70%
+.next
+  right: 30px
+  background: url(../img/right_arrow.png) center no-repeat
+  background-size: 70%
 @media screen and (max-width: 991px)
   .section
     &__block
