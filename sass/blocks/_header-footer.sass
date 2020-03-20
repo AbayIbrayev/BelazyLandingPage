@@ -1,6 +1,7 @@
 .header
   width: 100%
 .navbar
+  color: #ffffff
   &__inner
     display: flex
     justify-content: space-between
@@ -24,7 +25,27 @@
     a
       display: inline-block
       line-height: normal
+.footer
+  &__copyright
+    color: #ffffff
+    text-align: center
+    font-size: .9rem
+  &__call
+    text-align: center
 
+@media screen and (max-width: 991px)
+  .navbar
+    &__inner
+      &--footer
+        flex-direction: column
+        padding: 1.8rem 0;
+    &__logo
+      &--footer
+        padding: 0
+        margin-bottom: 20px
+  .footer
+    &__copyright
+      margin-bottom: 20px
 @media screen and (max-width: 768px)
   .navbar
     &__time
